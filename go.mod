@@ -15,4 +15,4 @@ require (
 	github.com/tendermint/tm-db v0.2.0
 )
 
-replace github.com/cosmos/ethermint v0.0.0-20190802135314-3f32f9ba8a1f => ../../chainsafe/ethermint
+replace github.com/cosmos/ethermint v0.0.0-20190802135314-3f32f9ba8a1f => github.com/chainsafe/ethermint v0.0.0-20191114211431-4401a8c6beeb
