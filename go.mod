@@ -7,8 +7,6 @@ require (
 	github.com/cosmos/cosmos-sdk v0.34.4-0.20191031200835-02c6c9fafd58
 	github.com/cosmos/ethermint v0.0.0-20190802135314-3f32f9ba8a1f
 	github.com/elastic/gosigar v0.10.5 // indirect
-	// * It is required to use go-ethereum as a dependency to pull needed dependencies
-	github.com/ethereum/go-ethereum v1.9.0
 	github.com/spf13/cobra v0.0.5
 	github.com/spf13/viper v1.5.0
 	github.com/stretchr/testify v1.4.0

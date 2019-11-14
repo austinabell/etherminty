@@ -19,6 +19,7 @@ import (
 	"github.com/spf13/viper"
 
 	"github.com/austinabell/etherminty/app"
+	emintgenaccounts "github.com/cosmos/ethermint/client/genaccounts"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/libs/cli"
@@ -56,8 +57,8 @@ func main() {
 		),
 		genutilcli.ValidateGenesisCmd(ctx, cdc, app.ModuleBasics),
 
-		// * Add genesis account command with EVM account type, function in ./cmd/emty/genaccounts.go
-		AddGenesisAccountCmd(ctx, cdc, app.DefaultNodeHome, app.DefaultCLIHome),
+		// * Add genesis account command with EVM account type using function from Ethermint
+		emintgenaccounts.AddGenesisAccountCmd(ctx, cdc, app.DefaultNodeHome, app.DefaultCLIHome),
 	)
 
 	// Tendermint node base commands

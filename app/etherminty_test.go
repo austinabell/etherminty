@@ -13,7 +13,7 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 
-func TestEthermintAppExport(t *testing.T) {
+func TestEthermintyAppExport(t *testing.T) {
 	db := dbm.NewMemDB()
 	app := NewEthermintyApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, true)
 
